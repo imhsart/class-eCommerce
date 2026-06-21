@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>E-Commerce Website</title>
+</head>
+<body>
+  <div class="container">
+    <div class="home-screen">
+      <!-- navbar starts -->
+      <div class="navbar">
+        <div class="left">
+          <img id="logo" alt="logo" src="./assets/shopoppe-logo.png">
+          <ul class="navbar-icons">
+            <li><a>Home</a></li>
+            <li><a>Shop</a></li>
+            <li><a>Favorites</a></li>
+            <li><a>Orders</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="right">
+          <div class="profile">
+            Profile
+          </div>
+          <div class="cart-button">
+            <button id="navbar-cart">
+              <svg style="height: 24px; width: 24px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M3 3h2l2.4 12.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L21 7H6"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                      <circle cx="10" cy="20" r="1.5" fill="currentColor"/>
+                      <circle cx="18" cy="20" r="1.5" fill="currentColor"/>
+                </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- navbar closes -->
+      <div class="content">
+        <!-- individual card structure
+          handled by script
+        card closes -->
+
+
+
+
+
+
+   
+
+      </div>
+      <!-- content closes here -->
+    </div>
+
+  </div>
+   <!-- modal -->
+        <div id="preview-modal">
+          <div id="preview-modal-content">
+            <div id="modal-img"></div>
+            <div id="preview-modal-details">
+              <p id="preview-model-number"></p>
+              <h2 id="preview-modal-name"></h2>
+              <p id="preview-modal-des"></p>
+              <p id="preview-modal-price"></p>
+              <div id="preview-modal-quantity"></div>
+              <button id="modal-add-to-cart">ADD TO CART</button>
+            </div>
+            <button id="modal-close-btn">X</button>
+          </div>
+        </div>
+        <!-- modal closes -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
