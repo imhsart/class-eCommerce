@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial;
 }
 .container{
   background-color: white;
@@ -151,6 +151,110 @@ img{
   font-size: 10px;
 }
 
-#preview-modal{
+
+/* modal css */
+.preview-modal{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
   display: none;
+  align-items: center;
+  justify-content: center;
 }
+#preview-modal-content{
+  background-color: white;
+  width: 70%;
+  height: 90%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  column-gap: 20px;
+  padding: 20px 30px;
+}
+#modal-img{
+  height: 70%;
+  flex:1;
+  margin: 20px;
+  img{
+    object-fit: cover;
+    object-position: center;
+  }
+}
+#preview-modal-details{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 20px;
+  height: 80%;
+}
+#preview-modal-number{
+  font-size: 10px;
+  color: grey;
+}
+#preview-modal-name{
+  font-size: 30px;
+  margin-block: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+#preview-modal-des{
+  font-size: 10px;
+  color:rgb(174, 174, 174);
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+#preview-modal-price{
+  font-size: 30px;
+  margin-block: 20px;
+  color: orangered;
+}
+#preview-modal-quantity{
+  padding: 25px 30px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  justify-content: center;
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 10px;
+}
+#preview-modal-quan{
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 20px;
+  padding: 10px 30px;
+}
+#modal-add-to-cart{
+  background-color: rgb(253, 111, 59);
+  max-width: max-content;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding: 15px 30px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 5px;
+  border: none;
+  margin-block-start: 40px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+#modal-close-btn{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background-color: transparent;
+  border:none;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* modal css end */
+

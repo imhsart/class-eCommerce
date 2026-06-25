@@ -50,8 +50,6 @@
 
 
 
-
-
    
 
       </div>
@@ -59,22 +57,32 @@
     </div>
 
   </div>
-   <!-- modal -->
-        <div id="preview-modal">
-          <div id="preview-modal-content">
-            <div id="modal-img"></div>
-            <div id="preview-modal-details">
-              <p id="preview-model-number"></p>
-              <h2 id="preview-modal-name"></h2>
-              <p id="preview-modal-des"></p>
-              <p id="preview-modal-price"></p>
-              <div id="preview-modal-quantity"></div>
-              <button id="modal-add-to-cart">ADD TO CART</button>
-            </div>
-            <button id="modal-close-btn">X</button>
-          </div>
-        </div>
-        <!-- modal closes -->
+  <!-- modal -->
+  <div class="preview-modal">
+    <div id="preview-modal-content">
+      <button id="modal-close-btn">╳</button>
+      <div id="modal-img"><img src="./assets/casual-tshirt.jpg"></div>
+      <div id="preview-modal-details">
+        <div id="preview-modal-number">CLT-TSH-003</div>
+        <div id="preview-modal-name">Unisex Graphic T-Shirt</div>
+        <div id="preview-modal-des">A soft cotton t-shirt featuring a minimalist graphic print design. It offers a comfortable fit suitable for daily casual use. The lightweight fabric makes it ideal for all-day wear.</div>
+        <p id="preview-modal-price">$ 9.95 USD</p>
+        <div id="preview-modal-quantity"><div id="preview-modal-quan">40</div></div>
+        <button id="modal-add-to-cart"><svg style="height: 20px; width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M3 3h2l2.4 12.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L21 7H6"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                      <circle cx="10" cy="20" r="1.5" fill="currentColor"/>
+                      <circle cx="18" cy="20" r="1.5" fill="currentColor"/>
+                </svg>ADD TO CART</button>
+      </div>
+    </div>
+  </div>
+  <!-- modal closes -->
+   
   <script type="module" src="script.js"></script>
 </body>
 </html>
