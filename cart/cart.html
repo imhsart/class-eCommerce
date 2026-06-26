@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cart.css">
+  <title>E-Commerce Website</title>
+</head>
+<body>
+    <div class="cart-container">
+      <div class="cart-navbar">
+        <div id="cart-home">Home</div>
+        <div class="arrow">&gt;</div>
+        <div id="cart-page">Shopping Cart</div>
+      </div>
+      <div class="cart-content">
+        <div class="cart-heading">Shopping Cart Summary</div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Product</th>
+              <th></th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="cart-item">
+              <td class="cart-item-remove"><button>╳</button></td>
+              <td class="cart-item-image"><img src="../assets/running-shorts.jpg"></td>
+              <td class="cart-item-name">Athletic Running Shorts</td>
+              <td class="cart-item-price">$10.99</td>
+              <td class="cart-item-quantity"><div><span>2</span><div class="quantity-btn"><button>+</button><button>-</button></div></div></td>
+              <td class="cart-item-total">$21.00</td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="total-amt">Total: $440</div>
+        <div id="place-order-btn"><button>Place Order</button></div>
+      </div>
+    </div>
+</body>
+</html>
