@@ -54,6 +54,23 @@ td{
 tr{
   padding: 20px;
 }
+.empty-cart-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+.empty-cart-section > img{
+  height: 400px;
+  width: 600px;
+  border-radius: 63% 37% 34% 66% / 61% 43% 57% 39%;
+  object-fit: cover;
+  object-position: center;
+}
+.empty-cart-section > h3{
+  color: rgb(253, 94, 36);
+}
 .cart-item-remove > button{
   background-color: transparent;
   border: none;
