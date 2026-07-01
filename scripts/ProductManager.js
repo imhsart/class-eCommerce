@@ -2,10 +2,11 @@ import productData from '../productData.js'
 const contentContainer = document.querySelector('.content')
 
 export default class ProductManager{
-  constructor(products, cart){
+  constructor(products, cart, onCartUpdate){
     this.products = products
     this.cart = cart
     this.modalContainer = document.querySelector('.preview-modal')
+    this.onCartUpdate = onCartUpdate
   }
 
   render(){
@@ -80,6 +81,7 @@ export default class ProductManager{
     .querySelector('.modal-add-to-cart')
     .addEventListener('click', ()=> {
       this.cart.addToCart(product)
+      this.onCartUpdate()
     })
   }
 
