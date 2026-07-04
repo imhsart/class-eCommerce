@@ -2,9 +2,10 @@ import productData from '../productData.js'
 const contentContainer = document.querySelector('.content')
 
 export default class ProductManager{
-  constructor(products, cart, onCartUpdate){
+  constructor(products, cart, faves, onCartUpdate){
     this.products = products
     this.cart = cart
+    this.faves = faves
     this.modalContainer = document.querySelector('.preview-modal')
     this.onCartUpdate = onCartUpdate
   }
@@ -48,10 +49,20 @@ export default class ProductManager{
   preview(idx){
     const product = this.getById(idx)
     if(!product) return
+
+    const foundInFav = this.faves.favorites.find(val => val.id === product.id)
+    
     this.modalContainer.innerHTML = `
       <div class="preview-modal-content">
       <button class="modal-close-btn">╳</button>
-      <div class="modal-img"><img src="${product.image}"></div>
+      <div class="modal-img">
+        <img src="${product.image}">
+        <button class="toggle-favorite ${foundInFav ? 'fav-icon-toggle' : ''}">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        </button>
+      </div>
       <div class="preview-modal-details">
         <div class="preview-modal-number">${product.modelNumber}</div>
         <div class="preview-modal-name">${product.name}</div>
@@ -72,6 +83,11 @@ export default class ProductManager{
     </div>
     `
     this.modalContainer.style.display = 'flex'
+    let toggleBtn = document.querySelector('.toggle-favorite')
+    toggleBtn.addEventListener('click', () => {
+      toggleBtn.classList.toggle('fav-icon-toggle')
+      this.faves.addToFaves(product)
+    })
 
     document
     .querySelector('.modal-close-btn')
