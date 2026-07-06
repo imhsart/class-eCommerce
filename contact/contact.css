@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+.contact-navbar{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 15px;
+  padding: 25px 50px;
+}
+#contact-home, #contact-page{
+  color: rgb(187, 186, 186);
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+#contact-home:hover, #contact-page:hover{
+  color: black;
+  cursor: pointer;
+}
+.arrow{
+  color: rgb(204, 203, 203);
+}
+img{
+  width: 100%;
+  object-fit: cover;
+}

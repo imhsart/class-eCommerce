@@ -26,6 +26,16 @@ document
 .addEventListener('click', () => {
   window.location.href = './cart/cart.html'
 })
+document
+.getElementById('about')
+.addEventListener('click', ()=> {
+  window.location.href = './about-us/about-us.html'
+})
+document
+.getElementById('contact')
+.addEventListener('click', () => {
+  window.location.href = './contact/contact.html'
+})
 function getCartCount(){
   document.getElementById('cart-count-badge').innerText = cart.getLength()
 }
