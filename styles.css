@@ -182,15 +182,16 @@ img{
 .preview-modal-content{
   background-color: white;
   width: 70%;
-  height: 90%;
   display: flex;
   position: relative;
   align-items: center;
   column-gap: 20px;
   padding: 20px 30px;
+  overflow-y: auto;
+  max-height: 90vh;
 }
 .modal-img{
-  height: 70%;
+  height: auto;
   flex:1;
   margin: 20px;
   position: relative;
@@ -205,7 +206,7 @@ img{
   flex-direction: column;
   row-gap: 20px;
   padding: 20px;
-  height: 80%;
+  height: auto;
 }
 .preview-modal-number{
   font-size: 10px;

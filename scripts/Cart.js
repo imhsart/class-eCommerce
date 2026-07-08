@@ -65,7 +65,7 @@ export default class Cart{
       `
       return;
     }
-    let totalAmount = this.items.reduce((sum,item) => sum + item.price*item.quantity, 0).toFixed(2)
+    let totalAmount = this.getTotalAmount()
     const rows = this.items.map(item => (
       `
         <tr class="cart-item" data-id="${item.id}">
@@ -97,7 +97,7 @@ export default class Cart{
           </tbody>
         </table>
         <div id="total-amt">Total: $ ${totalAmount}</div>
-        <div id="place-order-btn"><button>Place Order</button></div>
+        <div class="place-order-section"><button id="place-order-btn">Place Order</button></div>
     `
     this.addListener()
   }
@@ -106,5 +106,8 @@ export default class Cart{
   }
   getLength(){
     return this.items.length
+  }
+  getTotalAmount(){
+    return this.items.reduce((sum,item) => sum + item.price*item.quantity, 0).toFixed(2)
   }
 }
