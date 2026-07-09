@@ -22,6 +22,11 @@ document
   window.location.href = './favorites/favorites.html'
 })
 document
+.getElementById('orders')
+.addEventListener('click', () => {
+  window.location.href = './orders/orders.html'
+})
+document
 .getElementById('navbar-cart')
 .addEventListener('click', () => {
   window.location.href = './cart/cart.html'
@@ -36,6 +41,7 @@ document
 .addEventListener('click', () => {
   window.location.href = './contact/contact.html'
 })
+
 function getCartCount(){
   document.getElementById('cart-count-badge').innerText = cart.getLength()
 }

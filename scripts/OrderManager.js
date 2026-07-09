@@ -48,7 +48,12 @@ export default class Orders{
       address: address.value
     },
     items: this.cart.getItems(),
-    total: this.cart.getTotalAmount()
+    total: this.cart.getTotalAmount(),
+    date: new Date().toLocaleDateString("en-GB", {
+      day: "numeric",
+      month: "short",
+      year: "numeric",
+    })
   })
     errormess.innerText = ''
     this.saveOrders()
