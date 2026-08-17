@@ -2,11 +2,16 @@
 
 A front-end e-commerce website built using **HTML, CSS and JavaScript** to simulate a real online shopping experience.
 
-The project focuses on creating a complete multi-page shopping application with product browsing, favorites, shopping cart, order placement, and persistent data storage using **localStorage**, while following an object-oriented approach using JavaScript Classes.
+The project features product browsing, favorites, shopping cart, order placement, and persistent data storage using **localStorage**. It follows an **Object-Oriented Programming (OOP)** approach using JavaScript Classes to keep the application modular and maintainable.
+
+---
+## 🌐 Live Demo
+
+[View Live Demo](https://imhsart.github.io/class-eCommerce/)
 
 ---
 
-## 🚀 What this includes
+## 🚀 Features
 
 - Multi-page **E-commerce Website**
 - Clean and responsive **Navigation Bar**
@@ -19,7 +24,7 @@ The project focuses on creating a complete multi-page shopping application with 
 - **Order Placement**
   - checkout form with field validations, successful order confirmation
   - dedicated Orders page
-- **Persistent Data Storage using localStorage**
+- **Persistent Data Storage** using `localStorage`
   - Cart
   - Favorites
   - Orders
@@ -31,28 +36,29 @@ The project focuses on creating a complete multi-page shopping application with 
 ## 🧠 Architecture
 
 The project follows an **Object-Oriented Programming (OOP)** approach using JavaScript Classes.
-Instead of placing all functionality inside a single file, every major feature is managed by its own class. Each page imports only the classes it requires, making the project modular, reusable, and easier to maintain.
+Major features are handled by separate classes, with each page importing only the classes it requires. This keeps the application **modular, reusable, and easier to maintain**.
 
-The classes handle responsibilities such as:
+The classes are responsible for:
 
 - Rendering UI
-- Updating products
-- Cart operations
-- Favorites operations
-- Order placement
-- LocalStorage synchronization
+- Managing products
+- Handling Cart operations
+- Managing Favorites
+- Processing orders
+- Synchronizing data with `localStorage`
 
 ---
 
-## 🧠 What I Learned
+## ▶️ Run Locally
 
-- Building a complete multi-page application using Vanilla JavaScript
-- Applying **Object-Oriented Programming** using JavaScript Classes
-- Separating UI rendering from business logic
-- Creating reusable JavaScript modules
-- Managing application state using LocalStorage
-- Dynamically rendering DOM elements
-- Managing communication between multiple pages
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+2. Open the project folder in **VS Code**.
+3. Install the **Live Server** extension.
+4. Right-click `index.html` and select **Open with Live Server**.
 
 ---
 
